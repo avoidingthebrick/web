@@ -1,0 +1,19 @@
+{
+    "name": "Avoiding the brick",
+    "short_name": "AvoidingTheBrick",
+    "icons": [
+        {
+            "src": "assets/imgs/icon/icon_192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/imgs/icon/icon_384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#dcf0ff",
+    "background_color": "#dcf0ff",
+    "display": "standalone"
+}

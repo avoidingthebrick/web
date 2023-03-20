@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Avoiding the brick</title>
+    <meta name="description" content="lecture+workshop">
+    <meta name="keywords" content="modding,android,workshop,custom ROMs,wiki">
+    <meta name="author" content="Marco Pagan">
+    <link rel="canonical" href="https://avoidingthebrick.net"/>
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Avoiding the brick">
+    <meta property="og:description" content="lecture+workshop">
+    <meta property="og:url" content="https://avoidingthebrick.net/">
+    <meta property="og:site_name" content="Avoiding the brick">
+    <meta property="og:image" content="../assets/imgs/pres.jpg">
+    <meta name="apple-mobile-web-app-title" content="Avoiding the brick"/>
+    <meta name="application-name" content="Avoiding the brick"/>
+    <meta name="msapplication-TileColor" content="#caffe1"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/imgs/icon/icon_180x180.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/imgs/icon/icon_32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/imgs/icon/icon_16x16.png"/>
+    <link rel="mask-icon" href="../assets/imgs/icon/icon.svg" color="#000000"/>
+    <link rel="manifest" href="../assets/site.webmanifest"/>
+    <link rel="stylesheet" href="../assets/reset.css">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+
+<nav>
+  <a id="nav_btn" onclick="triggerNav(false)">CONTENTS +</a><br>
+  <ul id="nav_cont" style="display: none"><br>
+  <li><a href="#zero" onclick="triggerNav()">0 INSIDE THE COMMUNITY</a></li><br>
+  <li><a href="#one" onclick="triggerNav()">1 THE PLAYGROUND</a></li>
+  <li class="indent"><a href="#hand_1_1" onclick="triggerNav()">1.1 Computational luxury</a></li>
+  <li class="indent"><a href="#hand_1_2" onclick="triggerNav()">1.2 Closed systems / open systems</a></li><br>
+  <li><a href="#two" onclick="triggerNav()">2 THE MODDING MOVEMENT</a></li>
+  <li class="indent"><a href="#hand_2_1" onclick="triggerNav()">2.1 A brief history of modding</a></li>
+  <li class="indent"><a href="#hand_2_2" onclick="triggerNav()">2.2 The philosophy of modders</a></li>
+  <li class="indent"><a href="#hand_2_3" onclick="triggerNav()">2.3 What can you do?</a></li>
+  <li class="indent"><a href="#hand_2_4" onclick="triggerNav()">2.4 Spreading the knowledge</a></li><br>
+  <li><a href="#three" onclick="triggerNav()">3 THEN OUTSIDE THE COMMUNITY</a></li>
+  <li class="indent"><a href="#hand_3_1" onclick="triggerNav()">3.1 Next steps of the modding communities</a></li>
+  <li class="indent"><a href="#hand_3_2" onclick="triggerNav()">3.2 Design project</a></li><br>
+  <li><a href="#four" onclick="triggerNav()">4 RESOURCES</a></li>
+  <li class="indent"><a href="#hand_4_1" onclick="triggerNav()">4.1 Glossary</a></li>
+  <li class="indent"><a href="#hand_4_2" onclick="triggerNav()">4.2 Bibliography</a></li><br>
+  </ul>
+</nav>
+
+
+
+
+
+<aside id="toast" onclick="closeToast()"></aside>
+<aside id="lightbox" onclick="closeLightbox()"><img src=""></aside>
+<header id="header">
+  <h1 id="header_title">Avoiding the brick</h1>
+  <span id="header_scroll"><img src="../assets/imgs/text_minus.svg" onclick="textSize(false)"><img src="../assets/imgs/text_plus.svg" onclick="textSize(true)"></span>
+  <span id="header_nav"><a onclick="triggerNav(true)">+</a></span>
+</header>
+
+
+
+
+
+<main id="top">
+  <article id="index">
+    <div id="open_index" class="open">
+      <div id="index_header"><a href="../">←</a><h2>AVOIDING THE BRICK</h2></div>
+
+
+      <div id="index_wrapper">
+      <div class="index_chapter indx_c0">
+        <h2><a href="#zero">0<br>Inside the community</a></h2>
+        <p>an introduction</p>
+        <div class="tags">
+          <span>community</span>
+          <span>youtube</span>
+          <span>modding culture</span>
+          <span>dissemination</span>
+        </div>
+      </div>
+
+      <div class="index_chapter indx_c1">
+        <h2><a href="#one">1<br>The playground</a></h2>
+        <p>context and background</p>
+        <div class="tags">
+          <span>market strategy</span>
+          <span>consumerism</span>
+          <span>ownership</span>
+          <span>ecosystems</span>
+          <span>open source</span>
+          <span>benchmark</span>
+          <span>Google Apps</span>
+          <span>OEMs</span>
+          
+        </div>
+      </div>
+
+      <div class="index_chapter indx_c2">
+        <h2><a href="#two">2<br>The modding movement</a></h2>
+        <p>concepts, practice, dissemination</p>
+        <div class="tags">
+          <span>hackers</span>
+          <span>right to repair</span>
+          <span>custom ROMs</span>
+          <span>mod</span>
+          <span>root permission</span>
+          <span>CyanogenMod</span>
+          <span>tutorials</span>
+          <span>forums</span>
+        </div>
+      </div>
+
+      <div class="index_chapter indx_c3">
+        <h2><a href="#three">3<br>Then outside the community</a></h2>
+        <p>a reflection</p>
+        <div class="tags">
+          <span>phone market</span>
+          <span>lecture</span>
+          <span>workshop</span>
+          <span>tutorial</span>
+          <span>collaboration</span>
+          <span>design</span>
+          <span>community</span>
+          <span>sharing</span>
+        </div>
+      </div>
+
+      <div class="index_chapter indx_c4" style="border: none">
+        <h2><a href="#four">4<br>Resources</a></h2>
+        <p>glossary and bibliography</p>
+        <div class="tags">
+          <span>technical terms</span>
+          <span>references</span>
+          <span>forum threads</span>
+          <span>articles</span>
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </article>
+
+
+
+
+
+
+
+
+
+
+  <article id="zero">
+
+    <div id="open_0" class="open">
+      <h1>Inside the community</h1>
+      <h1 class="open_number">0</h1>
+      <img src="../assets/imgs/i0.svg">
+      <div class="open_caption">
+        <span class="open_rgt" style="bottom: 30px">What values has this movement given rise to besides technical support?</span>
+      </div>
+      <!--<p class="open_scroll_link"><a href="#top">SCROLL TO THE TOP</a></p>-->
+    </div>
+
+    <section>
+      <div><p class="col_s"></p>
+        <p class="col_m">It was 2011 when I got my first smartphone. A Samsung Galaxy S: the first model of a successful series of smartphones, still among the most popular today. I remember the fascination that a 14-year-old guy who was passionate about technology could have in front of that object. It felt like a miniature computer with unlimited potential. In less than a year I was hooked on the Android world, trying to figure out how to make the most of such a tool. After some months since I bought the phone, Google released a new version of Android: 4.0 Ice Cream Sandwich. Needless to say, I couldn't wait to get the update from the company so I could try all the new features and graphical innovations. I soon discovered that my model was a variant of the more famous flagship model, called Samsung Galaxy S SCL. This device differed by a few components from its main model, such as type of screen, GPU, and memory. However, this was enough to make it not compatible with the updates that the flagship model received. Digging into Android tech-enthusiast forums I discovered that some independent developers created unofficial updates of Android for my phone: that was my first contact with modding communities. From that time I started to mod my device by downloading and installing (or <a class="hand_glossary" onmouseover="openToast('glossary_flashing', false, 'c0')" onmouseleave="closeToast()">flashing</a> to use a tech slang term) unofficial firmwares, skins and mods, together with a friend of mine with the same phone model as me. The period between 2010 and 2018 was really prolific for developers and users: the influence this community has on the smartphone market it’s tangible.</p>
+      <p class="col_s"></p>
+    </div><br><br>
+
+      <div><p class="col_s"></p>
+        <figure class="col_m">
+          <img class="img_s" src="../assets/imgs/0/image57.png" alt="The Samsung Galaxy S (i9000)" onclick="openImg(this)">
+          <img class="img_s" src="../assets/imgs/0/image4.png" alt="The Samsung Galaxy S SCL (i9003)" onclick="openImg(this)">
+          <figcaption>The Samsung Galaxy S (i9000), released in June 2010 (left/top).<br>The Samsung Galaxy S SCL (i9003), my model, released in February 2011 (right/bottom).</figcaption>
+        </figure>
+        <p class="col_s"></p>
+      </div><br><br>
+
+      <div><p class="col_s"></p>
+        <p class="col_m">Parallel to that path, as an enthusiast, I felt the need to communicate to others the existence of this underworld, mostly the prerogative of Android nerds. I wanted to enter this community as an active member. So, after some experiments made the year before, in July 2013 my friend Davide and I opened a YouTube channel dedicated to Android modding. The goal was to raise awareness of the culture of modding in Italy, where at the time it was still not widespread. From 2012 to 2016 we made informative videos about the smartphone market, reviews and tutorials about modding. We got in touch with different developers, met and supported small independent projects that were trying to come up with an open and user-understandable idea of technology. One aspect that I became aware of only later is the political power of this community: modding is not just about solving technical issues but is a collective effort to elaborate an idea of technology that they intend to apply to society. Users and enthusiasts come together spontaneously to react to market trends that they see as not in line with their own thinking. The subversion of production systems into collective bottom-up logic makes modding a practice of activism. This opens up discussions about the role of the user within the phone market. If we frame these debates as a public discussion, what are the user's rights?</p>
+        <p class="col_s"></p>
+      </div><br><br>
+
+      <div><p class="col_s"></p>
+        <figure class="col_m">
+          <img class="img_s" src="../assets/imgs/0/image17.jpg" alt="Screenshot from my YouTube videos" onclick="openImg(this)">
+          <img class="img_s" src="../assets/imgs/0/image55.jpg" alt="Screenshot from my YouTube videos" onclick="openImg(this)">
+          <figcaption>Some videos from my YouTube channel between 2014 and 2016.</figcaption>
+        </figure>
+        <p class="col_s"></p>
+      </div><br><br>
+
+      <div><p class="col_s"></p>
+        <p class="col_m">This paper stems from the need to frame Android modding within a broader movement of hacking practices and technological activism. Since there are not any books or bibliographic resources specifically about Android modding the information I retrieved are taken mainly from forum threads, YouTube videos and articles in tech magazines. The reconstruction of the birth and development of this subcommunity is mediated by what has been my approach and experience as a user and disseminator. I, therefore, invite people to see this text as an attempt at a partial reconstruction of a complex movement that includes tens of thousands of developers and as many threads on forums and videos.</p>
+        <p class="col_s"></p>
+      </div><br><br>
+
+      <div><p class="col_s"></p>
+        <figure class="col_m">
+          <img src="../assets/imgs/0/image19.jpg" alt="My first video about Android custom ROMs" onclick="openImg(this)">
+          <figcaption>My first video about Android custom ROMs: a comparison between CyanogenMod running on two devices. Uploaded on April 11th 2013.</figcaption>
+        </figure>
+        <p class="col_s"></p>
+      </div><br><br>
+
+    </section>
+  </article>
+
+
+
+
+
+
+
+
+
+
+  <article id="one">
+
+    <div id="open_1" class="open">
+      <h1>The playground</h1>
+      <h1 class="open_number">1</h1>
+      <img src="../assets/imgs/i1.svg">
+      <div class="open_caption">
+        <span class="open_lft" style="bottom: 50px">How has Android modding affected the smartphone market?</span>
+      </div>
+    </div>
+
+    <section>
+      <div><p class="col_s"></p>
+        <p class="col_m"><a id="hand_1_1" href="#hand_1_1" class="subtitle"><span class="subtitle_number">1.1</span><span class="subtitle_text">Computational luxury</span></a>
+        According to the Cambridge dictionary, luxury is “something expensive that is pleasant to have but is not necessary” <sup class="hand_note" onclick="openToast('note_1_1', true, 'c1')"> 1 </sup>. Luxury is a driving market because for many people it represents one of the keys to positioning themselves in a higher social class. In many areas, luxury manifests itself as experiential luxury or related to the design of goods. In technology, luxury is visible (also) as an overabundance of computing power and is conveyed through data and lists of specs. In this chapter, I intend to explore the concept of computational luxury understood as a feature that marked the early development of the smartphone market. In the decade 2007-2017, we witnessed a technological boost that conditioned the social, environmental and technological impact of this sector. The phone market was driven by a surplus of computing power that monopolized the debate. Communication has also been shaped around selling data, numbers, and the technical features of devices, fueling consumerist logic. But in order to grasp this logic, we must understand the cultural shift in the software and hardware we operate - from advanced office stationery in the 90s to a personal accessory of the second half of the 2000s. In the late 1990s and early 2000s, mobile devices were seen as business tools, which aimed to digitize some office functions (agenda, mail, calendar). PDAs (personal digital assistants) were an attempt to miniaturize computers, becoming the first mobile products to include personal information manager tools. The concept of these products is similar to the early computer user interfaces, which took full force from the imagery of the office to create a digital parallel to it. The metaphor of the desk with files, folders, and recycle bin is carried over into the mobile world. It takes a business-oriented direction, becoming a status symbol among American managers.</p>
+        <p class="col_s"><small id="note_1_1"><sup class="note" style="color: var(--c1)">  1  </sup> LUXURY | definition in the Cambridge English dictionary. (2023).<a href="https://dictionary.cambridge.org/it/dizionario/inglese/luxury" target="_blank">[link]</a></small></p>
+    </div><br><br>
+
+    <div><p class="col_s"></p>
+      <figure class="col_m">
+        <img src="../assets/imgs/1/image20.jpg" alt="Blackberry 7520 (2004) used by a businessman" onclick="openImg(this)">
+        <figcaption>Blackberry 7520 (2004) used by a businessman.</figcaption>
+      </figure>
+      <p class="col_s"></p>
+    </div><br><br>
+
+    <div><p class="col_s"></p>
+      <p class="col_m">On January 9, 2007, the first step of a big revolution happened: Steve Jobs presented the first iPhone at the MacWorld conference in San Francisco. With this announcement Apple changed the paradigm of these devices forever. Already previously with products such as Nokia 9210 Communicator (2001) or the world of Pocket PCs there was an attempt to expand this market in this direction. However, it’s only after Apple's conference that smartphones are consolidated in our daily lives. These objects from substitutes for business physical objects (calculator, notebook, landline phone) become our photo and music archives as well as leisure and entertainment devices. The way smartphones are sold also changed: we moved from a business-oriented type of communication to a more intimate and familiar one. Ties and desks are gone from ads and we started to see parents, children, living rooms, kitchens and everyday situations. But how to stand out in this new technological environment where products become more than just the sum of their operations and where the immediate utility of technology is obscured?</p>
+      <p class="col_s"></p>
+    </div><br><br>
+
+    <div><p class="col_s"></p>
+      <figure class="col_m">
+        <img src="../assets/imgs/1/image2.jpg" alt="Steve Jobs Introducing The iPhone At MacWorld" onclick="openImg(this)">
+        <figcaption>Steve Jobs Introducing The iPhone At MacWorld (2007).</figcaption>
+      </figure>
+      <p class="col_s"></p>
+    </div><br><br>
+
+    <div><p class="col_s"></p>
+      <figure class="col_m">
+        <img class="img_s" src="../assets/imgs/1/image63.jpg" alt="Samsung Galaxy S3 commercial" onclick="openImg(this)">
+        <img class="img_s" src="../assets/imgs/1/image65.jpg" alt="Samsung Galaxy S3 commercial" onclick="openImg(this)">
+        <figcaption>Samsung Galaxy S3 commercial (2012).</figcaption>
+      </figure>
+      <p class="col_s"></p>
+    </div><br><br>
+
+    <div><p class="col_s"></p>
+      <p class="col_m">In the second decade of the 2000s, smartphone manufacturers spent their energies on miniaturizing smartphone components with the goal of making them more and more performing. From now on, the computational luxury begins. Each year the challenge is to be able to produce a device that outperforms both the competitors and their own model from the previous year. The advertising language is enriched with technical terminologies such as PPI, NIT for displays; mAh and Watt for battery life and charging speed; MegaPixel for cameras and GHz for processors. This approach has bent the market to the continuous search for data that can be sold to the public, incentivizing the consumerist aspect. This trend leads to an obsession with the practice of benchmarking. The goal is to stress test the device in order to retrieve a score that can be used to compare different phones. While reviews and hands-on spread across the web, versus.com becomes more and more popular. This website allows you to compare the technical specifications of different smartphones. Tools like this contribute to shaping the debate in a purely technical realm. We can imagine that this tech direction is also a consequence of homogenization in terms of design: if the device cannot stand out aesthetically, it must do so through its technical capabilities. Since the variety of shapes, screen types, and colors has become obsolete, branding strategies had to adapt.</p>
+      <p class="col_s"></p>
+    </div><br><br>
+
+    <div><p class="col_s"></p>
+      <figure class="col_m">
+        <img id="image_viz" src="../assets/imgs/1/image27.svg" alt="Smartphone’s average ram and rom in 15 years">
+        <figcaption>Smartphone’s average ram and rom in 15 years (Rom <span style="color: #3D63FF; font-size: large;" >▉</span> Ram <span style="color: #6AFF5A; font-size: large;">▉</span>) based on <a href="https://www.kaggle.com/datasets/arwinneil/gsmarena-phone-dataset" target="_blank">this</a> dataset.</figcaption>
+      </figure>
+      <p class="col_s"></p>
+    </div><br><br>
+
+    <div><p class="col_s"></p>
+      <figure class="col_m">
+        <img class="img_s" src="../assets/imgs/1/image8.jpg" alt="Iphone Pro Max 13 ads" onclick="openImg(this)">
+        <img class="img_s" src="../assets/imgs/1/image51.jpg" alt="Iphone Pro Max 13 ads" onclick="openImg(this)">
+        <figcaption>Iphone Pro Max 13 ads (2021).</figcaption>
+      </figure>
+      <p class="col_s"></p>
+    </div><br><br>
+
+    <div><p class="col_s"></p>
+      <figure class="col_m">
+        <img src="../assets/imgs/1/image7.jpg" alt="AnTuTu Benchmark screenshot" onclick="openImg(this)">
+        <figcaption>Top 20 Best Performance Android Phones /Tablets, according to AnTuTu Benchmark (2012).</figcaption>
+      </figure>
+      <p class="col_s"></p>
+    </div><br><br>
+
+    <div><p class="col_s"></p>
+        <p class="col_m">In this period, manufacturers decide to release more and more phones into the market than the usual annual unveilings: hence, an overabundance of devices is created. Consumers had to face this clutter, being induced to consider the computational aspect as crucial, no longer finding answers in product design. Also nomenclatures become more complex: we can notice the wide use of terms like mini, plus, pro and ultra, which confuse the consumer. These categories, based on supposedly objective technical capabilities rather than aesthetic qualities, created a clear hierarchy. Slide-out keyboards, rotating cameras, and satin finishes are no longer criteria for producing and categorizing phones. The new policy of manufacturers is to produce the flagship model with the highest performance possible and saturate the market in the mid-range by distributing mini, ultra or max variants. Companies, after the dramatic spike in phone production since 2011, have stopped optimizing and updating software for the entire product range, focusing only on flagship models. This leads to the abandonment of parallel devices of the main models and all those low-mid range phones. The design life of the products was drastically reduced - if you could not afford a flagship phone the device could be considered obsolete at the moment of purchase. This new attitude causes an increase in two phenomena: planned obsolescence and artificial demand generation. To prevent abandonware, that is software that ceases to have support from manufacturers, the community of consumers and enthusiasts take action themselves. According to the IDC Android smartphones held 59% of the market in the first quarter of 2012 <sup class="hand_note" onclick="openToast('note_1_2', true, 'c1')"> 2 </sup>. The wide diffusion and the open source nature of Google’s OS facilitate hacking practices and flourishing of communities that start to develop independent software. It’s in this context of smartphones with short life cycles, old or at best poorly optimized software that the story of modding begins. This movement is a practical response by developers and users to the rush for high-end hardware imposed by manufacturers.</p>
+        <p class="col_s"><small id="note_1_2"><sup class="note" style="color: var(--c1)">  2  </sup> Fingas, J. (2012). IDC: <i>Android has a heady 59 percent of world smartphone share, iPhone still on the way up</i> <a href="https://www.engadget.com/2012-05-24-idc-q1-2012-world-smartphone-share.html" target="_blank">[link]</a></small></p>
+    </div><br><br>
+
+    <div><p class="col_s"></p>
+      <figure class="col_m">
+        <img src="../assets/imgs/1/image16.jpg" alt="Meme about phone naming" class="img_s" onclick="openImg(this)">
+        <figcaption>Meme about phone naming. <a href="https://www.reddit.com/r/memes/comments/doipfq/who_tf_is_in_charge_of_these_longass_phone_names/" target="_blank">[link]</a></figcaption>
+      </figure>
+      <p class="col_s"></p>
+    </div><br><br>
+
+    <div><p class="col_s"></p>
+      <figure class="col_m">
+        <img src="../assets/imgs/1/image53.jpg" alt="Some of the smartphones released by Samsung during 2010" onclick="openImg(this)">
+        <figcaption>Some of the smartphones released by Samsung during 2010.</figcaption>
+      </figure>
+      <p class="col_s"></p>
+    </div><br><br>
+
+
+
+    </section>
+
+  </article>
+
+
+
+
+
+
+
+
+
+
+  <article id="two">
+    <div id="open_2" class="open">
+      <h1>The modding movement</h1>
+      <h1 class="open_number">2</h1>
+      <img src="../assets/imgs/i2.svg">
+      <div class="open_caption">
+        <span class="open_lft" style="bottom: 20px">How can users/citiziens have agency over the smartphone industry?
+        <!--<svg style="width: 26%;position: absolute;top: -8px;left: 0;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300"><path d="M210.5,118.36s-214-13-199,48,138,32,138,32,225-44,91-101" style="fill:none;stroke:#010101;stroke-width:7.5px" class="path"/></svg>-->
+        </span>
+      </div>
+    </div>
+    <section>
+
+    <div><p class="col_s"></p>
+      <p class="col_m">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p class="col_s"></p>
+    </div><br><br>
+
+    </section>
+  </article>
+
+
+
+
+
+
+
+
+
+
+  <article id="three">
+    <div id="open_3" class="open">
+      <h1>Then outside the community</h1>
+      <h1 class="open_number">3</h1>
+      <img src="../assets/imgs/i3.svg">
+      <div class="open_caption">
+        <span class="open_rgt" style="bottom: 50px">How can we build a common knowledge as a community?</span>
+      </div>
+    </div>
+    <section>
+
+    <div><p class="col_s"></p>
+      <p class="col_m">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p class="col_s"></p>
+    </div><br><br>
+
+    </section>
+  </article>
+
+
+
+
+
+
+
+
+
+
+  <article id="four">
+    <div id="open_4" class="open">
+      <h1>Resources</h1>
+      <h1 class="open_number">4</h1>
+      <img src="../assets/imgs/i4.svg">
+      <div class="open_caption">
+        <span class="open_lft" style="bottom: 20px">In which tone do we want to talk?</span>
+      </div>
+    </div>
+    <section>
+      <div><p class="col_s"></p>
+      <p class="col_m"><a id="hand_4_1" href="#hand_4_1" class="subtitle"><span class="subtitle_number">4.1</span><span class="subtitle_text">Glossary</span></a>
+      <cont id="glossary_adb"><a href="#glossary_adb">ADB</a>: Android Debug Bridge is a command-line tool that enables you to connect a device with a computer. The ADB command facilitates a variety of device actions, such as installing and debugging apps, and it provides access to a Unix shell that you can use to run a variety of commands on a device.</cont>
+      <br><br>
+      <cont id="glossary_bootleg"><a href="#glossary_bootleg">Bootleg app</a>: modified version of apps made by independent developers to add or edit some features. Bootleg software is sold or distributed without the required permission from the trademark or copyright holder/owner.</cont>
+      <br><br>
+      <cont id="glossary_bootloader"><a href="#glossary_bootloader">Bootloader</a>: it’s a piece of software that runs every time you turn on your device and it is responsible for bringing up the kernel. It can start the Android operating system or boot into recovery. The bootloader also verifies the integrity of the boot and recovery partitions before moving execution to the kernel. Having an unlocked bootloader allows you to install firmwares and recoveries from third-party developers.</cont>
+      <br><br>
+      <cont id="glossary_brick"><a href="#glossary_brick">Brick</a>: “to brick” is a tech slang term that means rendering a working device inoperable, as it is useful as a brick. First used in the context of modding mobile phones. When a device is soft bricked it is possible to restore the system and make it working again. If a phone is hard bricked there is almost no way to make it work again. A phone could be bricked if there are some errors during the modding procedures.</cont>
+      <br><br>
+      <cont id="glossary_build"><a href="#glossary_build">Build</a>: the term build is usually used to refer to the process of transforming source code into an executable artifact. Sometimes the same term is used to refer to the artifact obtained through that transformation process.</cont>
+      <br><br>
+      <cont id="glossary_clock"><a href="#glossary_clock">Clock rate</a>: the clock rate or clock speed refers to the frequency at which a processor can generate pulses, and is used to indicate the processor's speed. Usually on Android phones is expressed in frequency hertz (Hz).</cont>
+      <br><br>
+      <cont id="glossary_rom"><a href="#glossary_rom">Custom ROM</a>: modified android firmware that replaces the stock ROM to change features or skins of a phone. Custom ROMs can be developed by manufacturer and officially distributed or they can have origin from communities of independent developers.</cont>
+      <br><br>
+      <cont id="glossary_fastboot"><a href="#glossary_fastboot">Fastboot</a>: engineering protocol similar to the recovery but without any interface. When a device is turned into fastboot mode it’s possible to connect it to a computer and send ADB commands.</cont>
+      <br><br>
+      <cont id="glossary_flashing"><a href="#glossary_flashing">Flashing</a>: in tech slang flashing a smartphone means installing a mod, a custom ROM, or whatever piece of software in a manual way. Usually it can be done through specific computer programs or when the device is in recovery/fastboot mode.</cont>
+      <br><br>
+      <cont id="glossary_fork"><a href="#glossary_fork">Fork</a>: a fork or a branch, in the field of software engineering and computer science, means the development of a new software project from the source code of an existing one by a programmer.</cont>
+      <br><br>
+      <cont id="glossary_gapps"><a href="#glossary_gapps">GApps</a>: short version of Google Apps, they include all the main services of the brand.</cont>
+      <br><br>
+      <cont id="glossary_mod"><a href="#glossary_mod">Mod</a>: a mod is a piece of software that can be installed on a device in order to add, remove or modify features or design aspects of a main software.</cont>
+      <br><br>
+      <cont id="glossary_modding"><a href="#glossary_modding">Modding</a>: it is a slang expression derived from the English verb "to modify". The term refers to modification of hardware, software, or anything else, to perform a function not originally intended by the designer, or to achieve bespoke specification or appearance.</cont>
+      <br><br>
+      <cont id="glossary_oem"><a href="#glossary_oem">OEM</a>: it stands for Original Equipment Manufacturer, and it refers to a company that makes a product under its own brand name. Also called parent company means that it is the manufacturer that makes the original product, using components sourced from direct suppliers.</cont>
+      <br><br>
+      <cont id="glossary_ota"><a href="#glossary_ota">OTA</a>: OTA stands for over-the-air and it refers to various methods of distributing new software or configuration settings. One important feature of OTA is that one central location can send an update to all the users, who are unable to refuse or alter that update.</cont>
+      <br><br>
+      <cont id="glossary_recovery"><a href="#glossary_recovery">Recovery</a>: it is a dedicated and bootable partition on your smartphone that can install new updates to your device. By using a combination of keys, recovery mode is displayed on the Android device. After-market Android recovery solutions provide the ability to create a backup of an Android device and data on external storage.</cont>
+      <br><br>
+      <cont id="glossary_root"><a href="#glossary_root">Root permission</a>: rooting is the process of allowing users of the Android mobile operating system to attain privileged control (known as root access) over various Android subsystems. The root permission may be asked by apps to change system files, implement or modify pieces of software.</cont>
+      <br><br>
+      <cont id="glossary_skin"><a href="#glossary_skin">Skin</a>: Android skins are software tweaks that live on top of stock Android. They often look very different and offer features that other skins don’t.</cont>
+      </p>
+      <p class="col_s"></p>
+      </div><br><br>
+
+
+      <div><p class="col_s"></p>
+      <p class="col_m"><a id="hand_4_2" href="#hand_4_2" class="subtitle"><span class="subtitle_number">4.2</span><span class="subtitle_text">Bibliography: books and papers</span></a>
+          <span class="biblio">Aneesh, A. (2012) Informationalism. The Wiley-Blackwell Encyclopedia of Globalization. Blackwell Publishing Ltd.</span>
+          <span class="biblio">Bogers, L. & Chiappini, L. (Editors) (2019). The Critical Makers Reader: (Un)learning Technology. Amsterdam: Institute of Network Cultures.</span>
+          <span class="biblio">Castells, M. (2004) The network society: a cross-cultural perspective. Northampton, MA: Edward Elgar.</span>
+          <span class="biblio">Garfinkel, S., Weise, D., Strassmann, S. (1994) The UNIX-HATERS Handbook. United States: IDG.</span>
+          <span class="biblio">Habermas, J. (1985) The Theory of Communicative Action, Volume 2: Lifeworld and System: A Critique of Functionalist Reason. Beacon Press.</span>
+          <span class="biblio">Lange, P.G. (2018) Informal Learning on YouTube. United States: California College of the Arts.</span>
+          <span class="biblio">Levy, S. (1984). Hackers. New York: Dell Publishing.</span>
+          <span class="biblio">Manovich, L. (2013) Software Takes Command. Bloomsbury Academic.</span>
+          <span class="biblio">Pekka, H. (2001) The Hacker Ethic and the Spirit of the Information Age. New York: Random House.</span>
+          <span class="biblio">Raymond, E.S. (1999) The Cathedral and the Bazaar. O'Reilly Media.</span>
+          <span class="biblio">Sennett, R. (1970) The Uses of Disorder. Verso Publishing.</span>
+          <span class="biblio">Von Busch, O. (2014) Hacktivism as Design Research Method. In The Routledge Companion to Design Research (pp.226-235). Routledge.</span>
+      </p>
+      <p class="col_s"></p>
+      </div><br><br>
+
+
+      <div><p class="col_s"></p>
+        <p class="col_m"><a href="#hand_4_2" class="subtitle"><span class="subtitle_number">4.2</span><span class="subtitle_text">Bibliography: articles, videos, forum threads</span></a>
+          <span class="biblio">Amadeo, R. (2013). Balky carriers and slow OEMs step aside: Google is defragging Android. Arstechnica. <a href="https://arstechnica.com/gadgets/2013/09/balky-carriers-and-slow-oems-step-aside-google-is-defragging-android/" target="_blank">[link]</a></span>
+          <span class="biblio">Amadeo, R. (2018). Google’s iron grip on Android: Controlling open source by any means necessary. Arstechnica. <a href="https://arstechnica.com/gadgets/2018/07/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/" target="_blank">[link]</a></span>
+          <span class="biblio">Bhargav97. (2014). [GUIDE] OmniROM special features and unusual stuff. XDA Developers (forum). <a href="https://forum.xda-developers.com/t/guide-omnirom-special-features-and-unusual-stuff.2814010/" target="_blank">[link]</a></span>
+          <span class="biblio">bluefa1con. (2013). [AOSPA 4.2.1] ParanoidAndroid 3.0. XDA Developers (forum). <a href="https://forum.xda-developers.com/t/aospa-4-2-1-paranoidandroid-3-0.2109119/" target="_blank">[link]</a></span>
+          <span class="biblio">Chamberlain, E. (2022). What Is Right to Repair? iFixit. <a href="https://ifixit.com/News/61140/what-is-right-to-repair" target="_blank">[link]</a></span>
+          <span class="biblio">Dixon, T. (2021) Pixel 6 Pro Teardown: Google Actually Did Something Right!. iFixit. <a href="https://it.ifixit.com/News/55239/pixel-6-pro-teardown-google-actually-did-something-right" target="_blank">[link]</a></span>
+          <span class="biblio">Doctorow, C. (2019). Adversarial Interoperability. Electronic Frontier Foundation. <a href="https://www.eff.org/deeplinks/2019/10/adversarial-interoperability" target="_blank">[link]</a></span>
+          <span class="biblio">Doctorow, C. (2022) Repair Wars: Cory Doctorow on the State of Right to Repair. Make Zine. <a href="https://makezine.com/article/maker-news/repair-wars/" target="_blank">[link]</a></span>
+          <span class="biblio">El Khoury, R. (2016). Cyanogen Inc shutting down CyanogenMod nightly builds and other services, CM will live on as Lineage [Updated]. Android Police. <a href="https://www.androidpolice.com/2016/12/24/cyanogen-shutting-service-nightly-builds-december-31-2016/" target="_blank">[link]</a></span>
+          <span class="biblio">Hager, R. (2021). Google hires an Android community rooting guru. Android Police. <a href="https://www.androidpolice.com/2021/05/17/google-hires-an-android-community-rooting-guru/" target="_blank">[link]</a></span>
+          <span class="biblio">Hildenbrand, J. (2021). What are Google Mobile Services (GMS) and why does my phone need them?. Android Central. <a href="https://www.androidcentral.com/what-gms-and-why-does-my-phone-need-it" target="_blank">[link]</a></span>
+          <span class="biblio">Hughes, T. (2014). Google and Android Are Not the Same... and That’s a Good Thing. App Developer Magazine. <a href="https://appdevelopermagazine.com/google-and-android-are-not-the-same...-and-that's-a-good-thing/" target="_blank">[link]</a></span>
+          <span class="biblio">jbro129. (2022). android-modding. A collection of github repositories related to android modding. Github <a href="https://github.com/jbro129/android-modding" target="_blank">[link]</a></span>
+          <span class="biblio">Kastrenakes, J., Patel, N. (2018). Google will start charging Android device makers a fee for using its apps in Europe. The Verge. <a href="https://www.theverge.com/2018/10/16/17984074/google-eu-android-licensing-bundle-chrome-search" target="_blank">[link]</a></span>
+          <span class="biblio">Klosowski, T. (2021). What You Should Know About Right to Repair. New York Times. <a href="https://www.nytimes.com/wirecutter/blog/what-is-right-to-repair/" target="_blank">[link]</a></span>
+          <span class="biblio">pulser_g2. (2013). [ROM][4.3][ CM 10.2.] Unofficial CM 10.2 for Galaxy Note II (N7100). XDA Developers (forum). <a href="https://forum.xda-developers.com/t/rom-4-3-cm-10-2-unofficial-cm-10-2-for-galaxy-note-ii-n7100.2384208/page-28#post-44746084" target="_blank">[link]</a></span>
+          <span class="biblio">Raone. (2020). Android Modding Explained! (Rooting, Custom Rom, Bootloader...). YouTube. <a href="https://www.youtube.com/watch?v=UCItygRLuBM" target="_blank">[link]</a></span>
+          <span class="biblio">Raphael, JR. (2010). Android IS open -- but 'open' means different things. Computer World. <a href="https://www.computerworld.com/article/2469167/android-is-open----but--open--means-different-things.html" target="_blank">[link]</a></span>
+          <span class="biblio">Ray, B. (2013). All cool kids' phones run ALTERNATIVE alternative custom Android ROM. The Register. <a href="https://www.theregister.com/2013/10/16/android_custom_roms_splinter_over_openness/" target="_blank">[link]</a></span>
+          <span class="biblio">Rice, J. (2013). AOKP ROM Passes 3.5 Million Users, Android 4.3 Nightlies Available Now. Android Police. <a href="https://www.androidpolice.com/2013/09/28/aokp-rom-passes-3-5-million-users-nexus-7-2013-flo-and-oppo-find-5-android-4-3-nightlies-available-now/" target="_blank">[link]</a></span>
+          <span class="biblio">rINanDO. (2021). [ROM][UNOFFICIAL][12.1.0][r7][I9100] LineageOS 19.1 [ALPHA]. XDA Developers (forum). <a href="https://forum.xda-developers.com/t/rom-unofficial-12-1-0-r7-i9100-lineageos-19-1-alpha.4380641/" target="_blank">[link]</a></span>
+          <span class="biblio">Russakovskii, A. (2011). 13 Ways CyanogenMod 7 Makes My Android Phone Feel Future-Proof [Deep Review]. Android Police. <a href="https://www.androidpolice.com/2011/05/28/13-ways-cyanogenmod-7-makes-my-android-phone-feel-future-proof/" target="_blank">[link]</a></span>
+          <span class="biblio">Sahani, A. (2019). Why people are going crazy for custom roms. Medium. <a href="https://medium.com/@sahaniavtar1/why-people-are-going-crazy-for-custom-roms-8f19ed53081f" target="_blank">[link]</a></span>
+          <span class="biblio">Stallman, R. (2011). Is Android really free software?. The Guardian <a href="https://www.theguardian.com/technology/2011/sep/19/android-free-software-stallman" target="_blank">[link]</a></span>
+          <span class="biblio">Wang, J. (2019). This company will sell refurbished Android phones with all of Google's services removed. Android Police. <a href="https://www.androidpolice.com/2019/05/15/this-company-will-sell-refurbished-android-phones-with-all-of-googles-services-removed/" target="_blank">[link]</a></span>
+          <span class="biblio">Warren, T. (2019). Huawei confirms the new Mate 30 Pro won’t come with Google’s Android apps. The Verge <a href="https://www.theverge.com/2019/9/19/20873690/huawei-mate-30-series-phones-google-android-ban-apps-block" target="_blank">[link]</a> </span>
+          <span class="biblio">Wright, A. (2021). Samsung cripples the Galaxy Z Fold3 if you unlock the bootloader. Android Police. <a href="https://www.androidpolice.com/2021/08/24/samsung-cripples-the-galaxy-z-fold3-if-you-unlock-the-bootloader/" target="_blank">[link]</a></span>
+      </p>
+      <p class="col_s"></p>
+      </div>
+    </section>
+  </article>
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../assets/script.js"></script>
+
+
+
+</body>
+</html>

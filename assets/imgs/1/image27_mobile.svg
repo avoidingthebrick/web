@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 963.8 700.5" style="enable-background:new 0 0 963.8 700.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#6AFF5A;}
+	.st1{fill:#3D63FF;}
+	.st2{fill:none;stroke:#000000;stroke-width:2;}
+	.st3{font-family:'Helvetica';}
+	.st4{font-size:30px;}
+</style>
+<g id="values">
+	<g id="RAM">
+		<rect x="722" y="572.7" class="st0" width="92.8" height="20.8"/>
+		<rect x="627.1" y="580.6" class="st0" width="92.8" height="12.9"/>
+		<rect x="532.2" y="576.1" class="st0" width="92.8" height="17.4"/>
+		<rect x="437.4" y="590.4" class="st0" width="92.8" height="3.1"/>
+		<rect x="816.9" y="557.6" class="st0" width="92.8" height="35.9"/>
+		<rect x="342.5" y="592.1" class="st0" width="92.8" height="1.4"/>
+		<rect x="247.6" y="592.6" class="st0" width="92.8" height="0.9"/>
+		<rect x="152.7" y="593" class="st0" width="92.8" height="0.5"/>
+	</g>
+	<g id="ROM">
+		<rect x="722" y="357.9" class="st1" width="92.8" height="214.8"/>
+		<rect x="627.1" y="447.9" class="st1" width="92.8" height="132.7"/>
+		<rect x="532.2" y="466.9" class="st1" width="92.8" height="109.2"/>
+		<rect x="437.4" y="560.3" class="st1" width="92.8" height="30"/>
+		<rect x="816.9" y="76.5" class="st1" width="92.8" height="481.2"/>
+		<rect x="342.5" y="573.9" class="st1" width="92.8" height="18.2"/>
+		<rect x="247.6" y="586.6" class="st1" width="92.8" height="6.1"/>
+		<rect x="152.7" y="592.6" class="st1" width="92.8" height="0.4"/>
+	</g>
+</g>
+<g id="xaxis">
+	<line class="st2" x1="199.2" y1="593.5" x2="199.2" y2="599.5"/>
+	<text transform="matrix(1 0 0 1 164.0269 639.5912)" class="st3 st4">2003</text>
+	<line class="st2" x1="294" y1="593.5" x2="294" y2="599.5"/>
+	<text transform="matrix(1 0 0 1 258.902 639.5912)" class="st3 st4">2005</text>
+	<line class="st2" x1="388.9" y1="593.5" x2="388.9" y2="599.5"/>
+	<text transform="matrix(1 0 0 1 353.7772 639.5912)" class="st3 st4">2007</text>
+	<line class="st2" x1="483.8" y1="593.5" x2="483.8" y2="599.5"/>
+	<text transform="matrix(1 0 0 1 448.6524 639.5912)" class="st3 st4">2009</text>
+	<line class="st2" x1="578.7" y1="593.5" x2="578.7" y2="599.5"/>
+	<text transform="matrix(1 0 0 1 543.8962 639.5912)" class="st3 st4">2011</text>
+	<line class="st2" x1="673.5" y1="593.5" x2="673.5" y2="599.5"/>
+	<text transform="matrix(1 0 0 1 638.4028 639.5912)" class="st3 st4">2013</text>
+	<line class="st2" x1="768.4" y1="593.5" x2="768.4" y2="599.5"/>
+	<text transform="matrix(1 0 0 1 733.2778 639.5912)" class="st3 st4">2015</text>
+	<line class="st2" x1="863.3" y1="593.5" x2="863.3" y2="599.5"/>
+	<text transform="matrix(1 0 0 1 828.1531 639.5912)" class="st3 st4">2017</text>
+</g>
+<g id="yaxis">
+	<path class="st2" d="M127.5,593.5v-560"/>
+	<line class="st2" x1="909.5" y1="593.5" x2="121.5" y2="593.5"/>
+	<text transform="matrix(1 0 0 1 25.9324 603.691)" class="st3 st4">0GB</text>
+	<line class="st2" x1="909.5" y1="453.5" x2="121.5" y2="453.5"/>
+	<text transform="matrix(1 0 0 1 21.4452 463.6911)" class="st3 st4">10GB</text>
+	<line class="st2" x1="909.5" y1="313.5" x2="121.5" y2="313.5"/>
+	<text transform="matrix(1 0 0 1 21.4452 323.6911)" class="st3 st4">20GB</text>
+	<line class="st2" x1="909.5" y1="173.5" x2="121.5" y2="173.5"/>
+	<text transform="matrix(1 0 0 1 21.4452 183.6911)" class="st3 st4">30GB</text>
+	<line class="st2" x1="909.5" y1="33.5" x2="121.5" y2="33.5"/>
+	<text transform="matrix(1 0 0 1 21.4452 43.6911)" class="st3 st4">40GB</text>
+</g>
+</svg>
