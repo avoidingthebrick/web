@@ -142,6 +142,20 @@ header span{
   padding: 0 1%;
   font-size: var(--l);
 }
+cont{display: flex}
+cont span{width: 160px}
+cont small{width: calc(100% - 160px); font-size: var(--m)}
+cont a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: var(--s);
+    border: 2px solid var(--accent);
+    border-bottom: 3px solid var(--accent);
+    border-radius: 5px;
+    padding: 5px 8px 3px 8px;
+    margin-right: 5px;
+  }
+cont a:hover{font-style: normal}
 
 
 
@@ -151,7 +165,7 @@ header span{
 #toast{
   position: fixed;
   top: 200px;
-  left: 200px;
+  left: 100px;
   max-width: 350px;
   background-color: var(--back);
   z-index: 400;
@@ -183,6 +197,8 @@ header span{
   vertical-align: middle;
 }
 
+#img_amz{width: 25.5%; margin-right: 60px}
+
 /* COLORS */
 #index, #open_index{background-color: var(--back); color: white}
 #zero, #open_0{background-color: var(--c0)}
@@ -192,17 +208,19 @@ header span{
 #four, #open_4{background-color: var(--c4)}
 
 /* BIBLIOGRAPHY */
-.biblio{display:list-item; line-height: 1.6}
+.biblio{display:list-item; line-height: 1.6; list-style-type: "– ";}
 
 /* GRID */
 .col_s{width: 15%;line-height: 1;padding-right: 3%}
 .col_m{width: 75%;margin: auto;max-width: 800px;}
 
-.subtitle{font-size: var(--mUP); letter-spacing: -1px; text-decoration: none;display: flex; align-items: center}
+.subtitle_note{padding-top: 68px}
+.subtitle{font-size: var(--mUP); letter-spacing: -1px; text-decoration: none;display: flex; align-items: center; padding-top: 68px;}
 .subtitle:hover{font-style: normal}
 .subtitle:hover .subtitle_text{text-decoration: underline}
 .subtitle:hover span::after{content: " #"}
 .subtitle:hover .subtitle_number::after{content: none}
+.subtitle_text{text-decoration: underline}
 .subtitle_number{
   /*border: 2px solid var(--accent);
   border-bottom: 4px solid var(--accent);*/
@@ -307,7 +325,7 @@ nav a:hover {text-decoration: underline; font-style: normal}
 #index_header{color: white; display: flex;}
 #index_header a{color: white; text-decoration: none; font-size: var(--l); padding-left: 10px;}
 #index_header h2{position: absolute; right: 10px; margin-top: 15px}
-.index_chapter {margin-left: 0; height: 100vh; border-right:1px solid white}
+.index_chapter {margin-left: 0; height: 100vh}
 .index_chapter h2{width: 100%}
 .index_chapter a{text-decoration: none; color: inherit}
 .index_chapter a:hover{text-decoration: underline;font-style: normal}
@@ -351,6 +369,7 @@ nav a:hover {text-decoration: underline; font-style: normal}
     height: 100vh;
     padding-bottom: 30px;
   }
+  cont{display: block}
   .img_s{width: 100%}
   .col_m{width: 90%}
   .col_s{display: none}
@@ -364,6 +383,7 @@ nav a:hover {text-decoration: underline; font-style: normal}
     border-bottom: 4px var(--accent) solid;
     border-radius: 5px;
   }
+  #img_amz{width: 75%}
   #nav_btn{display: none;}
   .open{min-height: 65vh}
   .open h1{line-height: .9; width: 25%}

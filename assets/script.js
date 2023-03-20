@@ -96,14 +96,23 @@ function triggerNav(isMobile){
 
 
 function openToast(id, onlymobile, color){
-    if (onlymobile == false || mobile.matches) {
-        let note = document.getElementById(id);
-        let toast = document.getElementById("toast");
+    let toast = document.getElementById("toast");
+    let note = document.getElementById(id);
+    if (toast.style.display == "initial") {toast.style.display = "none"}
+    else if (onlymobile == false || mobile.matches) {
         toast.innerHTML = note.innerHTML;
         toast.style.display = "initial";
         toast.style.backgroundColor = "var(--"+color+")";
     }
-    if (onlymobile) {document.getElementById(id).scrollIntoView()}
+    if (onlymobile) {
+        let pos = note.getBoundingClientRect();
+        window.scrollTo(0, pos.top + window.scrollY - 68);
+        //document.getElementById(id).scrollIntoView();
+    }else{
+        let tempText = toast.innerHTML.replace("<small>", ": <small>");
+        toast.innerHTML = tempText;
+    }
+
 }
 
 function closeToast(){
