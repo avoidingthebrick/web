@@ -385,7 +385,7 @@ nav a:hover {text-decoration: underline; font-style: normal}
 
 @media (max-width: 550px) {
   :root {
-  --xl: 25vw;
+  --xl: 20vw;
   }
 }
 
