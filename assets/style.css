@@ -371,7 +371,7 @@ nav a:hover {text-decoration: underline; font-style: normal}
   .open_caption{font-size: calc(var(--l)/1.8)}
   .open_caption span{width: 50%; border: 2px solid var(--accent); border-bottom: 4px solid var(--accent);}
   .open_number{right: -80%}
-  #open_3{min-height: 75vh}
+  #open_3{min-height: 65vh}
   #open_4{min-height: 50vh}
   #index_wrapper{display: block}
   #index_header {margin-bottom: 10px}
