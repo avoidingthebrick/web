@@ -37,7 +37,7 @@
 /* GENERAL */
 :root {
   --accent: #000;
-  --back: #1e1e1e;
+  --back: #111;
   --s: 14px;
   --m: 20px;
   --mUP: 28px;
@@ -115,7 +115,6 @@ article{transition: padding .1s}
 article:hover h1{line-height: .82}
 article:hover .open_rgt{transform: rotate(-3deg) !important}
 article:hover .open_lft{transform: rotate(3deg) !important}
-article:hover .path{animation: dash 2s linear .5s 1; stroke-dasharray: 1000; stroke-dashoffset: 1000;}
 section{padding-top: 20px}
 section div{display: flex}
 section small{font-size: var(--s); line-height: 1.1}
@@ -183,7 +182,7 @@ cont a:hover{font-style: normal}
   left: 0%;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(30, 30, 30, .8);
+  background-color: rgba(0, 0, 0, .8);
   display: none;
   z-index: 500;
   justify-content: center;
@@ -196,6 +195,9 @@ cont a:hover{font-style: normal}
   max-height: 80vh;
   vertical-align: middle;
 }
+
+#lightbox h3{position: absolute; bottom: 20px; text-align: center; color: white}
+#lightbox a{color:white}
 
 #img_amz{width: 25.5%; margin-right: 60px}
 
@@ -245,7 +247,10 @@ cont a:hover{font-style: normal}
 }
 .hand_glossary{cursor: pointer;border-bottom: 2px var(--accent) solid; border-radius: 2px}
 .hand_glossary:hover{border-bottom: 4px var(--accent) solid; font-style: normal;}
-#open_3 h1{width: 35%}
+#open_3 h1{width: 35%; line-height: .86}
+#three:hover h1{line-height: .82}
+#open_3{min-height: 110vh}
+#open_4{min-height: 50vh}
 .open{
   position: relative;
   background-color: var(--back);
@@ -385,14 +390,13 @@ nav a:hover {text-decoration: underline; font-style: normal}
   }
   #img_amz{width: 75%}
   #nav_btn{display: none;}
+  #open_3{min-height: 80vh}
   .open{min-height: 65vh}
   .open h1{line-height: .9; width: 25%}
   .open img {width: 70%}
   .open_caption{font-size: calc(var(--l)/1.8)}
   .open_caption span{width: 50%; border: 2px solid var(--accent); border-bottom: 4px solid var(--accent);}
   .open_number{right: -80%}
-  #open_3{min-height: 65vh}
-  #open_4{min-height: 50vh}
   #index_wrapper{display: block}
   #index_header {margin-bottom: 10px}
   #index_header h2{margin-top: 10px}

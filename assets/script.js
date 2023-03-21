@@ -104,7 +104,7 @@ function openToast(id, onlymobile, color){
         toast.style.display = "initial";
         toast.style.backgroundColor = "var(--"+color+")";
     }
-    if (onlymobile) {
+    if (onlymobile && !mobile.matches) {
         let pos = note.getBoundingClientRect();
         window.scrollTo(0, pos.top + window.scrollY - 68);
         //document.getElementById(id).scrollIntoView();
@@ -128,6 +128,7 @@ function openImg(elem){
     if(mobile.matches == false) {
         lightbox.style.display = "flex";
         lightbox.children[0].src = elem.src;
+        lightbox.children[1].innerHTML = elem.parentElement.lastElementChild.innerHTML;
     }
 }
 
