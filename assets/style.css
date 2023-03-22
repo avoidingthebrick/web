@@ -238,7 +238,7 @@ cont a:hover{font-style: normal}
 .hand_note{cursor: pointer;
   border: 2px var(--accent) solid;
   padding: 3px 3px 1px 3px;
-  vertical-align: super;
+  vertical-align: middle;
   font-size: smaller;
 }
 .hand_note:hover{
@@ -335,7 +335,7 @@ nav a:hover {text-decoration: underline; font-style: normal}
 .index_chapter a{text-decoration: none; color: inherit}
 .index_chapter a:hover{text-decoration: underline;font-style: normal}
 .index_chapter span{color: var(--accent); border-radius: 5px; font-size: var(--s); padding: 6px 10px 3px 10px; text-transform: uppercase}
-.index_chapter p{margin-bottom: 20px;}
+.index_chapter p{margin-bottom: 20px}
 .tags{position: relative; width: 100%; padding: 0% !important}
 .indx_c0{color: var(--c0)} .indx_c0 span{background-color: var(--c0)}
 .indx_c1{color: var(--c1)} .indx_c1 span{background-color: var(--c1)}
