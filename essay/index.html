@@ -157,10 +157,10 @@
 
 
 
-  <article id="zero">
+  <article id="zero" onmouseenter="animateTitle('open_0', 15, false)">
 
     <div id="open_0" class="open">
-      <h1>Inside the community</h1>
+      <h1><span>I</span><span>n</span><span>s</span><span>i</span><span>d</span><span>e</span><br><span>t</span><span>h</span><span>e</span><br><span>c</span><span>o</span><span>m</span><span>m</span><span>u</span><span>n</span><span>i</span><span>t</span><span>y</span></h1>
       <h1 class="open_number">0</h1>
       <img src="../assets/imgs/i0.svg">
       <div class="open_caption">
@@ -232,10 +232,10 @@
 
 
 
-  <article id="one">
+  <article id="one" onmouseenter="animateTitle('open_1', 10, false)">
 
     <div id="open_1" class="open">
-      <h1>The playground</h1>
+      <h1><span>T</span><span>h</span><span>e</span><br><span>p</span><span>l</span><span>a</span><span>y</span><span>g</span><span>r</span><span>o</span><span>u</span><span>n</span><span>d</span></h1>
       <h1 class="open_number">1</h1>
       <img src="../assets/imgs/i1.svg">
       <div class="open_caption">
@@ -464,9 +464,9 @@
 
 
 
-  <article id="two">
+  <article id="two" onmouseenter="animateTitle('open_2', 12, false)">
     <div id="open_2" class="open">
-      <h1>The modding movement</h1>
+      <h1><span>T</span><span>h</span><span>e</span><br><span>m</span><span>o</span><span>d</span><span>d</span><span>i</span><span>n</span><span>g</span><br><span>m</span><span>o</span><span>v</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span></h1>
       <h1 class="open_number">2</h1>
       <img src="../assets/imgs/i2.svg">
       <div class="open_caption">
@@ -520,9 +520,9 @@
 
 
 
-  <article id="three">
+  <article id="three" onmouseenter="animateTitle('open_3', 15, false)">
     <div id="open_3" class="open">
-      <h1>Then outside the community</h1>
+      <h1><span>T</span><span>h</span><span>e</span><span>n</span><br><span>o</span><span>u</span><span>t</span><span>s</span><span>i</span><span>d</span><span>e</span><br><span>t</span><span>h</span><span>e</span><br><span>c</span><span>o</span><span>m</span><span>m</span><span>u</span><span>n</span><span>i</span><span>t</span><span>y</span></h1>
       <h1 class="open_number">3</h1>
       <img src="../assets/imgs/i3.svg">
       <div class="open_caption">
@@ -554,9 +554,9 @@
 
 
 
-  <article id="four">
+  <article id="four" onmouseenter="animateTitle('open_4', 10, false)">
     <div id="open_4" class="open">
-      <h1>Resources</h1>
+      <h1><span>R</span><span>e</span><span>s</span><span>o</span><span>u</span><span>r</span><span>c</span><span>e</span><span>s</span></h1>
       <h1 class="open_number">4</h1>
       <img src="../assets/imgs/i4.svg">
       <div class="open_caption">
@@ -701,6 +701,27 @@
 
 
 <script type="text/javascript" src="../assets/script.js"></script>
+
+<script type="text/javascript">
+  //CONSTANTS
+  const zero = document.getElementById("zero");
+  const one = document.getElementById("one");
+  const two = document.getElementById("two");
+  const three = document.getElementById("three");
+  const four = document.getElementById("four");
+  const header = document.getElementById("header");
+  const headerTitle = document.getElementById("header_title");
+  const header_scroll = document.getElementById("header_scroll");
+  const header_nav = document.getElementById("header_nav");
+  const navCont = document.getElementById("nav_cont");
+  const navBtn = document.getElementById("nav_btn");
+  const nav = document.getElementsByTagName("nav")[0];
+  const lightbox = document.getElementById("lightbox");
+  const viz = document.getElementById("image_viz");
+  const scrollTollerance = 150;
+  window.onscroll = function() {changeOpening(window.pageYOffset)};
+  changeOpening();
+</script>
 
 
 

@@ -1,25 +1,5 @@
 //CONSTANTS
 const mobile = window.matchMedia("(max-width: 1085px)");
-const zero = document.getElementById("zero");
-const one = document.getElementById("one");
-const two = document.getElementById("two");
-const three = document.getElementById("three");
-const four = document.getElementById("four");
-const header = document.getElementById("header");
-const headerTitle = document.getElementById("header_title");
-const header_scroll = document.getElementById("header_scroll");
-const header_nav = document.getElementById("header_nav");
-const navCont = document.getElementById("nav_cont");
-const navBtn = document.getElementById("nav_btn");
-const nav = document.getElementsByTagName("nav")[0];
-const lightbox = document.getElementById("lightbox");
-const viz = document.getElementById("image_viz");
-const scrollTollerance = 150;
-
-
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {changeOpening(window.pageYOffset)};
-
 
 function changeOpening() {
     // Change the viz image
@@ -46,8 +26,8 @@ function changeOpening() {
         document.querySelector(':root').style.setProperty('--navColor', '#fffccd');
    }else if (window.pageYOffset > pos_2+scrollTollerance && window.pageYOffset < pos_3+scrollTollerance){
         header.style.backgroundColor = "var(--c2)";
-        document.querySelector(':root').style.setProperty('--navColor', '#caffe1');
         headerTitle.innerHTML = "The modding movement";
+        document.querySelector(':root').style.setProperty('--navColor', '#caffe1');
     }else if (window.pageYOffset > pos_3+scrollTollerance && window.pageYOffset < pos_4+scrollTollerance){
         header.style.backgroundColor = "var(--c3)";
         headerTitle.innerHTML = "Then outside the community";
@@ -107,7 +87,6 @@ function openToast(id, onlymobile, color){
     if (onlymobile && !mobile.matches) {
         let pos = note.getBoundingClientRect();
         window.scrollTo(0, pos.top + window.scrollY - 68);
-        //document.getElementById(id).scrollIntoView();
     }else{
         let tempText = toast.innerHTML.replace("<small>", ": <small>");
         toast.innerHTML = tempText;
@@ -138,6 +117,50 @@ function textSize(increase){
     document.documentElement.style.setProperty('--m', current+"px");
 }
 
-changeOpening();
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function animateLetter(id, homepage){
+    let title = document.getElementById(id);
+    let letters = title.children[0].children;
+    let index = getRandomIntInclusive(0, letters.length-1);
+    letters[index].classList.add("ext");
+    if (homepage) {if (letters[index].innerHTML == "t" || letters[index].innerHTML == "h" || letters[index].innerHTML == "e") {
+        let wdt = letters[index].offsetWidth;
+        let subtitle = title.children[1];
+        let actualLeft = subtitle.offsetLeft;
+        subtitle.style.left = actualLeft+(wdt/2)+"px";
+    }}
+    setTimeout(() => {
+        letters[index].classList.remove("ext");
+        if (homepage) {if (letters[index].innerHTML == "t" || letters[index].innerHTML == "h" || letters[index].innerHTML == "e") {
+            let wdt = letters[index].offsetWidth;
+            let subtitle = title.children[1];
+            let actualLeft = subtitle.offsetLeft;
+            subtitle.style.left = actualLeft-(wdt)+"px";
+        }}
+    }, 300);
+}
+
+
+function animateTitle(id, iterations, homepage){
+    for (let i=0; i < iterations; i++) {
+        setTimeout(() => {
+            animateLetter(id, homepage);
+        }, 200*(i*Math.random()));
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
