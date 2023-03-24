@@ -18,27 +18,32 @@ function changeOpening() {
     
     if (window.pageYOffset > pos_0+scrollTollerance && window.pageYOffset < pos_1+scrollTollerance){
         header.style.backgroundColor = "var(--c0)";
-        headerTitle.innerHTML = "Inside the community";
+        headerLink.href = "#zero";
+        if (headerTitle.innerHTML != "Inside the community") {headerTitle.innerHTML = "Inside the community"}
         document.querySelector(':root').style.setProperty('--navColor', '#ffedff');
     }else if (window.pageYOffset > pos_1+scrollTollerance && window.pageYOffset < pos_2+scrollTollerance){
         header.style.backgroundColor = "var(--c1)";
-        headerTitle.innerHTML = "The playground";
+        headerLink.href = "#one";
+        if (headerTitle.innerHTML != "The playground") {headerTitle.innerHTML = "The playground"}
         document.querySelector(':root').style.setProperty('--navColor', '#fffccd');
    }else if (window.pageYOffset > pos_2+scrollTollerance && window.pageYOffset < pos_3+scrollTollerance){
         header.style.backgroundColor = "var(--c2)";
-        headerTitle.innerHTML = "The modding movement";
+        headerLink.href = "#two";
+        if (headerTitle.innerHTML != "The modding movement") {headerTitle.innerHTML = "The modding movement"}
         document.querySelector(':root').style.setProperty('--navColor', '#caffe1');
     }else if (window.pageYOffset > pos_3+scrollTollerance && window.pageYOffset < pos_4+scrollTollerance){
         header.style.backgroundColor = "var(--c3)";
-        headerTitle.innerHTML = "Then outside the community";
+        headerLink.href = "#three";
+        if (headerTitle.innerHTML != "Then outside the community") {headerTitle.innerHTML = "Then outside the community"}
         document.querySelector(':root').style.setProperty('--navColor', '#ffe6c8');
     }else if (window.pageYOffset > pos_4+scrollTollerance){
         header.style.backgroundColor = "var(--c4)";
-        headerTitle.innerHTML = "Resources";
+        headerLink.href = "#four";
+        if (headerTitle.innerHTML != "Resources") {headerTitle.innerHTML = "Resources"}
         document.querySelector(':root').style.setProperty('--navColor', '#dcf0ff');
     }else{
-        headerTitle.innerHTML = "Avoiding the brick";
         header.style.backgroundColor = "var(--c4)";
+        if (headerTitle.innerHTML != "Avoiding the brick") {headerTitle.innerHTML = "Avoiding the brick"}
         document.querySelector(':root').style.setProperty('--navColor', 'white');
     }
 

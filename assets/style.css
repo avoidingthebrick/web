@@ -127,6 +127,7 @@ header{
 }
 header h1{font-size: var(--l); padding-left: 10px; letter-spacing: 1px;}
 header a{text-decoration: none; cursor: pointer}
+header a:hover{font-style: normal}
 header img{width: 20px; cursor: pointer; margin-bottom: 10px; margin-right: 4px;}
 header span{
   position: absolute;
@@ -174,7 +175,7 @@ nav a:hover {text-decoration: underline; font-style: normal}
 
 
 
-/* TOAST AND LIGHTBOX */
+/* TOAST */
 #toast{
   position: fixed;
   top: 200px;
@@ -212,6 +213,10 @@ nav a:hover {text-decoration: underline; font-style: normal}
 #lightbox h3{position: absolute; bottom: 20px; text-align: center; color: white}
 #lightbox a{color:white}
 #img_amz{width: 25.5%; margin-right: 60px}
+
+/* COLOPHON */
+#end_colophon{font-size: var(--s); display: flex; border-top: 1.5px solid var(--accent); padding-top: 30px;}
+#end_colophon span{margin: 0 auto}
 
 /* COLORS */
 #index, #open_index{background-color: var(--back); color: white}
@@ -309,6 +314,7 @@ nav a:hover {text-decoration: underline; font-style: normal}
 #open_index{height: 100vh; max-height: 100vh; display: block}
 #index_wrapper{display: flex}
 #index_wrapper div{width: 100%; padding: 1%}
+#index_abstract{position: absolute;bottom: 30px;font-size: calc(var(--m)*.9);padding: 0 20px;max-width: 810px}
 #index_header{color: white; display: flex;}
 #index_header a{color: white; text-decoration: none; font-size: var(--l); padding-left: 10px;}
 #index_header h2{position: absolute; right: 10px; margin-top: 15px}
@@ -337,6 +343,22 @@ nav a:hover {text-decoration: underline; font-style: normal}
 #hp_links span{border-radius: 10px; border: 4px solid var(--accent); border-bottom: 8px solid var(--accent); padding: 10px 18px 12px 18px}
 #hp_text{padding: 0 20px; position: absolute; bottom: 40px; font-size: calc(var(--l)*.6); line-height: 1.1; letter-spacing: -.6px; max-width: 65%}
 .ext {font-family: "Formula Exp"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -385,19 +407,28 @@ nav a:hover {text-decoration: underline; font-style: normal}
     border-bottom: 4px var(--accent) solid;
     border-radius: 5px;
   }
+  #end_colophon{display: block}
+  #end_colophon span{margin: 0}
   #img_amz{width: 75%}
   #nav_btn{display: none;}
+  #open_index {height: unset; max-height: unset}
+  #open_0{min-height: 60vh}
+  #open_1{min-height: 60vh}
+  #open_2{min-height: 60vh}
   #open_3{min-height: 80vh}
-  .open{min-height: 65vh}
+  #open_4{min-height: 60vh}
   .open h1{line-height: .9; width: 25%}
   .open img {width: 70%}
   .open_caption{font-size: calc(var(--l)/1.8)}
   .open_caption span{width: 50%; border: 2px solid var(--accent); border-bottom: 4px solid var(--accent);}
-  .open_number{right: -80%}
+  .open_number{right: -87%}
+  .subtitle {padding-top: 50px}
   #index_wrapper{display: block}
+  #index_abstract{position: relative;bottom: unset;font-size: var(--m);padding: 70px 20px;max-width: 100%}
   #index_header {margin-bottom: 10px}
   #index_header h2{margin-top: 10px}
   .index_chapter {margin-left: 10px; height: unset}
+  .index_chapter p {margin-bottom: 0}
   .tags{display: none}
   #homepage{display: block}
   #homepage h1{font-size: 120px}
