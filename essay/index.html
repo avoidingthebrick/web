@@ -303,7 +303,7 @@
 
     <div><p class="col_s"></p>
       <figure class="col_m">
-        <img id="image_viz" src="../assets/imgs/1/image27.svg" alt="Smartphone’s average ram and rom in 15 years">
+        <img id="image27" src="../assets/imgs/1/image27.svg" alt="Smartphone’s average ram and rom in 15 years">
         <figcaption>Smartphone’s average ram and rom in 15 years (Rom <span style="color: #23221d; font-size: large;" >▉</span> Ram <span style="color: #7f7d69; font-size: large;">▉</span>) based on <a href="https://www.kaggle.com/datasets/arwinneil/gsmarena-phone-dataset" target="_blank">this</a> dataset.</figcaption>
       </figure>
       <p class="col_s"></p>
@@ -365,8 +365,8 @@
 
     <div><p class="col_s"></p>
       <figure class="col_m">
-        <img src="../assets/imgs/1/image59.jpg" alt="the Android Open Source Project platform" onclick="openImg(this)">
-        <figcaption>Diagram representing the Android Open Source Project platform (Tutusitte). <a href="https://commons.wikimedia.org/wiki/File:Android_Open_Source_Project_platform.png" target="_blank">[link]</a></figcaption>
+        <img id="image59" src="../assets/imgs/1/image59.svg" alt="the Android Open Source Project platform" onclick="openImg(this)">
+        <figcaption>Diagram representing the Android Open Source Project platform (Tutusitte). <a href="https://commons.wikimedia.org/wiki/File:Android_Open_Source_Project_platform.png" target="_blank">[source]</a></figcaption>
       </figure>
       <p class="col_s"></p>
     </div><br><br>
@@ -567,7 +567,7 @@
 
     <div><p class="col_s"></p>
       <figure class="col_m">
-        <img src="../assets/imgs/2/image13A.svg" alt="Possibilities of modding" onclick="openImg(this)">
+        <img id="image13A" src="../assets/imgs/2/image13A.svg" alt="Possibilities of modding" onclick="openImg(this)">
         <figcaption>Possibilities of modding and the user journey.</figcaption>
       </figure>
       <p class="col_s"></p>
@@ -580,7 +580,7 @@
 
     <div><p class="col_s"></p>
       <figure class="col_m">
-        <img src="../assets/imgs/2/image13B.svg" alt="Procedure to unlock the bootloader" onclick="openImg(this)">
+        <img id="image13B" src="../assets/imgs/2/image13B.svg" alt="Procedure to unlock the bootloader" onclick="openImg(this)">
         <figcaption>Diagram of the procedure to unlock the bootloader on an Android device (the path may be different for other devices).</figcaption>
       </figure>
       <p class="col_s"></p>
@@ -1101,7 +1101,10 @@
   const navBtn = document.getElementById("nav_btn");
   const nav = document.getElementsByTagName("nav")[0];
   const lightbox = document.getElementById("lightbox");
-  const viz = document.getElementById("image_viz");
+  const image27 = document.getElementById("image27");
+  const image59 = document.getElementById("image59");
+  const image13A = document.getElementById("image13A");
+  const image13B = document.getElementById("image13B");
   const scrollTollerance = 150;
   window.onscroll = function() {changeOpening(window.pageYOffset)};
   changeOpening();

@@ -4,10 +4,18 @@ const mobile = window.matchMedia("(max-width: 1085px)");
 function changeOpening() {
     // Change the viz image
     if (mobile.matches) {
-        viz.src = "../assets/imgs/1/image27_mobile.svg";
+        image27.src = "../assets/imgs/1/image27_mobile.svg";
+        image59.src = "../assets/imgs/1/image59_mobile.svg";
+        image13A.src = "../assets/imgs/2/image13A_mobile.svg";
+        image13B.src = "../assets/imgs/2/image13B_mobile.svg";
         if (navCont.style.display == "none") {nav.style.display = "none"}
     }
-    else{viz.src = "../assets/imgs/1/image27.svg";}
+    else{
+        image27.src = "../assets/imgs/1/image27.svg";
+        image59.src = "../assets/imgs/1/image59.svg";
+        image13A.src = "../assets/imgs/2/image13A.svg";
+        image13B.src = "../assets/imgs/2/image13B.svg";
+    }
     
     // Get the offset position of every opening
     let pos_0 = zero.offsetTop;
