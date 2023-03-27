@@ -387,7 +387,7 @@
 
     <div><p class="col_s"></p>
       <figure class="col_m">
-        <img src="../assets/imgs/1/image56.png" alt="Google Play Services screenshots" onclick="openImg(this)">
+        <img id="image56" src="../assets/imgs/1/image56.png" alt="Google Play Services screenshots" onclick="openImg(this)">
         <figcaption>What happens when you try living without Google Play Services (From Ron Amadeo’s article).</figcaption>
       </figure>
       <p class="col_s"></p>
@@ -512,7 +512,7 @@
 
     <div><p class="col_s"></p>
       <figure class="col_m">
-        <img src="../assets/imgs/2/image10.jpg" alt="Complains about the new policies of Cyanogen Inc" onclick="openImg(this)">
+        <img id="image10" src="../assets/imgs/2/image10.jpg" alt="Complains about the new policies of Cyanogen Inc" onclick="openImg(this)">
         <figcaption>Extract from a forum thread: the user pulser_g2 complains about the new policies of Cyanogen Inc. <sup class="hand_note" onclick="openToast('note_2_4', true, 'c2')"> 4 </sup></figcaption>
       </figure>
       <p class="col_s"></p>
@@ -677,7 +677,7 @@
 
     <div><p class="col_s"></p>
       <figure class="col_m">
-        <img src="../assets/imgs/2/image43.jpg" alt="GravityBox, the most popular Xposed Framework" onclick="openImg(this)">
+        <img id="image43" src="../assets/imgs/2/image43.jpg" alt="GravityBox, the most popular Xposed Framework" onclick="openImg(this)">
         <figcaption>Some of the options available with GravityBox, the most popular Xposed Framework (2015).</figcaption>
       </figure>
       <p class="col_s"></p>
@@ -730,52 +730,12 @@
     <div><p class="col_s"></p>
         <p class="col_m">Here are some diagrams representing the most modified interface elements.</p>
         <p class="col_s"></p>
-    </div><br><br>
+    </div><br>
 
     <div><p class="col_s"></p>
       <figure class="col_m">
-        <img src="../assets/imgs/2/diagrams1.png" alt="Lockscreen customization" onclick="openImg(this)">
-        <figcaption></figcaption>
-      </figure>
-      <p class="col_s"></p>
-    </div><br><br>
-
-    <div><p class="col_s"></p>
-      <figure class="col_m">
-        <img src="../assets/imgs/2/diagrams2.png" alt="Status bar customization" onclick="openImg(this)">
-        <figcaption></figcaption>
-      </figure>
-      <p class="col_s"></p>
-    </div><br><br>
-
-    <div><p class="col_s"></p>
-      <figure class="col_m">
-        <img src="../assets/imgs/2/diagrams3.png" alt="Notification panel customization" onclick="openImg(this)">
-        <figcaption></figcaption>
-      </figure>
-      <p class="col_s"></p>
-    </div><br><br>
-
-    <div><p class="col_s"></p>
-      <figure class="col_m">
-        <img src="../assets/imgs/2/diagrams4.png" alt="Homescreen customization" onclick="openImg(this)">
-        <figcaption></figcaption>
-      </figure>
-      <p class="col_s"></p>
-    </div><br><br>
-
-    <div><p class="col_s"></p>
-      <figure class="col_m">
-        <img src="../assets/imgs/2/diagrams5.png" alt="Power menu customization" onclick="openImg(this)">
-        <figcaption></figcaption>
-      </figure>
-      <p class="col_s"></p>
-    </div><br><br>
-
-    <div><p class="col_s"></p>
-      <figure class="col_m">
-        <img src="../assets/imgs/2/diagrams6.png" alt="Navbar customization" onclick="openImg(this)">
-        <figcaption></figcaption>
+        <img id="diagrams" src="../assets/imgs/2/diagrams1.png" alt="Lockscreen customization" onclick="switchInterfaceImg()">
+        <figcaption style="margin-top: -35px">Click on the image to change the interface element.</figcaption>
       </figure>
       <p class="col_s"></p>
     </div><br><br>
@@ -1103,9 +1063,14 @@
   const lightbox = document.getElementById("lightbox");
   const image27 = document.getElementById("image27");
   const image59 = document.getElementById("image59");
+  const image56 = document.getElementById("image56");
+  const image10 = document.getElementById("image10");
   const image13A = document.getElementById("image13A");
   const image13B = document.getElementById("image13B");
+  const image43 = document.getElementById("image43");
+  const diagrams = document.getElementById("diagrams");
   const scrollTollerance = 150;
+  let interfaceImgCounter = 1;
   window.onscroll = function() {changeOpening(window.pageYOffset)};
   changeOpening();
 </script>

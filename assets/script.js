@@ -6,15 +6,21 @@ function changeOpening() {
     if (mobile.matches) {
         image27.src = "../assets/imgs/1/image27_mobile.svg";
         image59.src = "../assets/imgs/1/image59_mobile.svg";
+        image56.src = "../assets/imgs/1/image56_mobile.png";
+        image10.src = "../assets/imgs/2/image10_mobile.jpg";
         image13A.src = "../assets/imgs/2/image13A_mobile.svg";
         image13B.src = "../assets/imgs/2/image13B_mobile.svg";
+        image43.src = "../assets/imgs/2/image43_mobile.jpg";
         if (navCont.style.display == "none") {nav.style.display = "none"}
     }
     else{
         image27.src = "../assets/imgs/1/image27.svg";
         image59.src = "../assets/imgs/1/image59.svg";
+        image56.src = "../assets/imgs/1/image56.png";
+        image10.src = "../assets/imgs/2/image10.jpg";
         image13A.src = "../assets/imgs/2/image13A.svg";
         image13B.src = "../assets/imgs/2/image13B.svg";
+        image43.src = "../assets/imgs/2/image43.jpg";
     }
     
     // Get the offset position of every opening
@@ -165,6 +171,16 @@ function animateTitle(id, iterations, homepage){
             animateLetter(id, homepage);
         }, 200*(i*Math.random()));
     }
+}
+
+
+function switchInterfaceImg(){
+    if (interfaceImgCounter <= 5) {
+        interfaceImgCounter++;
+    }else{
+        interfaceImgCounter = 1;
+    }
+    diagrams.src = "../assets/imgs/2/diagrams"+interfaceImgCounter+".png";
 }
 
 
