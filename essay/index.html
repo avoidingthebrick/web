@@ -734,8 +734,8 @@
 
     <div><p class="col_s"></p>
       <figure class="col_m">
-        <img id="diagrams" src="../assets/imgs/2/diagrams1.png" alt="Lockscreen customization" onclick="switchInterfaceImg()">
-        <figcaption style="margin-top: -35px">Click on the image to change the interface element.</figcaption>
+        <img id="diagrams" src="../assets/imgs/2/diagrams1.jpg" alt="Lockscreen customization" onclick="switchInterfaceImg()">
+        <figcaption id="diagrams_caption">Click on the image to change the interface element.    [<span id="diagrams_counter">1</span>/6]</figcaption>
       </figure>
       <p class="col_s"></p>
     </div><br><br>
@@ -1069,6 +1069,7 @@
   const image13B = document.getElementById("image13B");
   const image43 = document.getElementById("image43");
   const diagrams = document.getElementById("diagrams");
+  const diagrams_counter = document.getElementById("diagrams_counter");
   const scrollTollerance = 150;
   let interfaceImgCounter = 1;
   window.onscroll = function() {changeOpening(window.pageYOffset)};

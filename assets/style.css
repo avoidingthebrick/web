@@ -264,6 +264,7 @@ nav a:hover {text-decoration: underline; font-style: normal}
 .hand_note:hover{border: 2px var(--accent) solid;border-bottom: 4px var(--accent) solid}
 .hand_glossary{cursor: pointer;border-bottom: 2px var(--accent) solid; border-radius: 2px}
 .hand_glossary:hover{border-bottom: 4px var(--accent) solid; font-style: normal;}
+#diagrams_caption{margin-top: -35px}
 
 /* OPENINGS */
 #open_2 h1{line-height: .9}
@@ -448,6 +449,7 @@ nav a:hover {text-decoration: underline; font-style: normal}
   .index_chapter {margin-left: 10px; height: unset}
   .index_chapter p {margin-bottom: 0}
   .tags{display: none}
+  #diagrams_caption{margin-top: 0}
   #homepage{display: block}
   #homepage h1{font-size: 120px}
   #homepage h3{top: 120px; left: 170px; font-size: 21px; letter-spacing: -1.3px}
