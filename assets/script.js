@@ -96,27 +96,48 @@ function triggerNav(isMobile){
   }
 
 
-function openToast(id, onlymobile, color){
-    let toast = document.getElementById("toast");
+function openToastNote(id, color){
     let note = document.getElementById(id);
     if (toast.style.display == "initial") {toast.style.display = "none"}
-    else if (onlymobile == false || mobile.matches) {
+    else if (mobile.matches) {
         toast.innerHTML = note.innerHTML;
         toast.style.display = "initial";
         toast.style.backgroundColor = "var(--"+color+")";
-    }
-    if (onlymobile && !mobile.matches) {
+    }else{
         let pos = note.getBoundingClientRect();
         window.scrollTo(0, pos.top + window.scrollY - 68);
-    }else{
+    }
+}
+
+function openToastGlossaryClick(id, color){
+    if (toast.style.display == "initial") {toast.style.display = "none"}
+    else if (mobile.matches){
+        let note = document.getElementById(id);
+        toast.innerHTML = note.innerHTML;
         let tempText = toast.innerHTML.replace("<small>", ": <small>");
         toast.innerHTML = tempText;
+        toast.style.display = "initial";
+        toast.style.backgroundColor = "var(--"+color+")";
     }
+}
 
+function openToastGlossaryOver(id, color){
+    if (!mobile.matches) {
+        let note = document.getElementById(id);
+        toast.innerHTML = note.innerHTML;
+        let tempText = toast.innerHTML.replace("<small>", ": <small>");
+        toast.innerHTML = tempText;
+        toast.style.display = "initial";
+        toast.style.backgroundColor = "var(--"+color+")";
+    }
+}
+
+function closeToastGlossaryOver(){
+    if (!mobile.matches) {toast.style.display = "none"}
 }
 
 function closeToast(){
-    document.getElementById("toast").style.display = "none";
+    toast.style.display = "none";
 }
 
 function closeLightbox(){
