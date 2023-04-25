@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Avoiding the brick</title>
-    <meta name="description" content="lecture+workshop">
+    <meta name="description" content="Avoiding the brick tries to frame the Android modding movement in a broader context of hacker activism, with the aim of giving a theoretical framework around this practice. The project consists of research, video lectures that analyze the movement, and a workshop focused on modding practice.">
     <meta name="keywords" content="modding,android,workshop,custom ROMs,wiki">
     <meta name="author" content="Marco Pagan">
     <link rel="canonical" href="https://avoidingthebrick.net"/>
@@ -31,6 +31,48 @@
 
 <body onload="animateTitle('hp_title', 15, true)">
 
+
+
+
+
+
+<aside id="toast" onmouseleave="closeToast()" style="width: fit-content; height: fit-content"></aside>
+<aside style="display: none;">
+    <div id="popup_1_1">
+        <a href="essay/index.html#hand_1_1" class="popup"><p>How manufacturers shaped the smartphone market?<br><small>READ MORE →</small></p></a>
+    </div>
+    <div id="popup_1_2">
+        <a href="essay/index.html#hand_1_2" class="popup"><p>How open is the Android ecosystem?<br><small>READ MORE →</small></p></a>
+    </div>
+    <div id="popup_2_1">
+        <a href="essay/index.html#hand_2_1" class="popup"><p>How the modding was born and developed?<br><small>READ MORE →</small></p></a>
+    </div>
+    <div id="popup_2_2">
+        <a href="essay/index.html#hand_2_2" class="popup"><p>What is the philosophy of the modding movement?<br><small>READ MORE →</small></p></a>
+    </div>
+    <div id="popup_2_3">
+        <a href="essay/index.html#hand_2_3" class="popup"><p>What can you do modding your phone?<br><small>READ MORE →</small></p></a>
+    </div>
+    <div id="popup_2_4">
+        <a href="essay/index.html#hand_2_4" class="popup"><p>How modders share the knowledge?<br><small>READ MORE →</small></p></a>
+    </div>
+    <div id="popup_research">
+        <a href="essay/" class="popup"><p>Read the full essay<br>from here →</p></a>
+    </div>
+    <div id="popup_vids">
+        <a href="vids/" class="popup"><p>Watch all the videos<br>from here →</p></a>
+    </div>
+    <div id="popup_ws">
+        <a href="workshop/" class="popup"><p>See the result of<br>the activities here →</p></a>
+    </div>
+</aside>
+
+
+
+
+
+
+
 <main id="homepage">
     <section id="hp_title">
         <h1><span>A</span><span>v</span><span>o</span><span>i</span><span>d</span><span>i</span><span>n</span><span>g</span><br><span>t</span><span>h</span><span>e</span><br><span>b</span><span>r</span><span>i</span><span>c</span><span>k</span></h1>
@@ -44,13 +86,75 @@
     </section>
 </main>
 
-<p id="hp_text">Avoiding the brick tries to frame the Android modding movement in a broader context of hacker activism, with the aim of giving a theoretical framework around this practice, that is mainly technical. The project consists of research, video lectures that analyze the movement, and a workshop focused on modding practice.</p>
+
+  <article id="zero">
+      <p id="hp_abstract" class="col_m subtitle" style="display: block">Avoiding the brick tries to frame the Android modding movement in a broader context of <a class="hp_hand" onmouseover="openToastHomeOver('popup_2_2', 'c2', this)" onclick="openToastHomeClick('popup_2_2', 'c2', this)">hacker activism</a>, with the aim of giving a theoretical framework around this practice, that is mainly technical. <a class="hp_hand" onmouseover="openToastHomeOver('popup_2_1', 'c2', this)" onclick="openToastHomeClick('popup_2_1', 'c2', this)">Since 2009</a>, groups of independent developers have been developing <a class="hp_hand" onmouseover="openToastHomeOver('popup_2_3', 'c2', this)" onclick="openToastHomeClick('popup_2_3', 'c2', this)">modified software</a> for Android smartphones and distributing it for free in <a class="hp_hand" onmouseover="openToastHomeOver('popup_2_4', 'c2', this)" onclick="openToastHomeClick('popup_2_4', 'c2', this)">specialized forums</a>. The purpose of this practice is to offer software support and counterbalance market trends such as <a class="hp_hand" onmouseover="openToastHomeOver('popup_1_1', 'c1', this)" onclick="openToastHomeClick('popup_1_1', 'c1', this)">planned obsolescence</a> or the <a class="hp_hand" onmouseover="openToastHomeOver('popup_1_2', 'c1', this)" onclick="openToastHomeClick('popup_1_2', 'c1', this)">system privatization</a>, used as a way to fuel trade and consumption. The project consists of a <a class="hp_hand" onmouseover="openToastHomeOver('popup_research', 'c4', this)" onclick="openToastHomeClick('popup_research', 'c4', this)">research</a>, <a class="hp_hand" onmouseover="openToastHomeOver('popup_vids', 'c4', this)" onclick="openToastHomeClick('popup_vids', 'c4', this)">video lectures</a> that analyze the movement, and a <a class="hp_hand" onmouseover="openToastHomeOver('popup_ws', 'c4', this)" onclick="openToastHomeClick('popup_ws', 'c4', this)">workshop</a> focused on modding practice.</p><br><br><br><br>
+  </article>
+
+
+
+<main id="hp_wrapper">
+  <article id="one">
+    <div class="hp_captionBox" style="transform: rotate(-2deg)">
+        <span style="background-color: var(--c1)">How has computational<br>luxury affected the<br>smartphone market?</span>
+    </div>
+    <p class="col_m subtitle">In the decade 2007-2017, we witnessed a technological boost that conditioned the social, environmental and technological impact of this sector. The phone market was driven by a surplus of computing power that monopolized it. Communication has also been shaped around selling data, numbers, and the technical features of devices, fueling consumerist logic.</p><br>
+    <p class="col_m"><a class="hand_glossary" href="essay/index.html#hand_1_1">Read more →</a><br><br>
+  </article>
+
+
+
+  <article id="two">
+    <div class="hp_captionBox" style="transform: rotate(1deg)">
+        <span style="background-color: var(--c2)">How can users/citiziens<br>have agency over<br>the smartphone industry?
+        </span>
+    </div>
+    <p class="col_m subtitle">The practice of modding includes several procedures that allow you to have more control over your device. As we will see, some of these are hindered by manufacturers and involve limitations in the use and maintenance of the smartphone. Since all OEMs develop their products differently from the others, it's not possible to draw a standard procedure for modding each device.</p><br>
+    <p class="col_m"><a class="hand_glossary" href="essay/index.html#hand_2_3">Read more →</a><br><br>
+  </article>
+
+
+
+  <article id="three">
+    <div class="hp_captionBox" style="transform: rotate(-3deg)">
+        <span style="background-color: var(--c3)">What values has this<br>movement given rise to<br>besides technical support?</span>
+    </div>
+    <p class="col_m subtitle">Since 2020 the development of the hardware is slowing down since we reached a saturation of some features like the display density or the amount of RAM. The politics of computational luxury can no longer be perpetrated by manufacturers. Concerning the software, modding is not as popular as before because most of the brands try to keep their system closed blocking self customization practices.</p><br>
+    <p class="col_m"><a class="hand_glossary" href="essay/index.html#hand_3_1">Read more →</a><br><br>
+  </article>
+</main>
+
+
+  <article>
+    <div><p class="col_s"></p>
+      <p class="col_m subtitle">If you want to get in touch send me and email <a href="mailto:marco.pagan.one@gmail.com">here</a>!
+      <!--This movement can be seen as a software repair community that focuses on device support and software maintenance.-->
+      </p>
+      <p class="col_s"></p>
+    </div><br><br>
+    <div><p class="col_s"></p>
+      <p id="end_colophon" class="col_m"><span>This publication resulted from research conducted<br>as part of the individual thesis project in the master<br>department Information Design at<br>Design Academy Eindhoven, The Netherlands<br><br>April 2023<br><br></span>
+      <span><u>Tutors</u><br>
+      Simon Davies<br>
+      Anna Engelhardt<br>
+      Marco Ferrari<br>
+      Dimitri Jeannottat<br>
+      Silvio Lorusso<br>
+      Gert Staal<br>
+      Irene Stracuzzi<br><br></span>
+      <span>Written and designed by Marco Pagan</span>
+      </p>
+      <p class="col_s"></p>
+    </div><br><br>
+  </article>
+
 
 <script type="text/javascript" src="assets/script.js"></script>
 <script type="text/javascript">
+    let subtitleLftPos = getSubtitleLeftPos('hp_title');
     setInterval(() => {
-        animateTitle('hp_title', getRandomIntInclusive(3, 7), true);
-    }, getRandomIntInclusive(5000, 10000));
+        animateTitle('hp_title', getRandomIntInclusive(5, 10), true);
+    }, getRandomIntInclusive(2000, 8000));
 </script>
 
 </body>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Avoiding the brick - Screen</title>
+    <meta name="description" content="lecture+workshop">
+    <meta name="keywords" content="modding,android,workshop,custom ROMs,wiki">
+    <meta name="author" content="Marco Pagan">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/icon/icon_32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/icon/icon_16x16.png"/>
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body onload="animateTitle('hp_title', 15, true)" style="background-color: var(--c1)">
+
+<main id="homepage">
+    <section id="hp_title">
+        <h1><span>A</span><span>v</span><span>o</span><span>i</span><span>d</span><span>i</span><span>n</span><span>g</span><br><span>t</span><span>h</span><span>e</span><br><span>b</span><span>r</span><span>i</span><span>c</span><span>k</span></h1>
+      <h3>an android modding<br>lecture + workshop</h3>
+    </section>
+</main>
+
+<script type="text/javascript" src="assets/script.js"></script>
+<script type="text/javascript">
+    let subtitleLftPos = getSubtitleLeftPos('hp_title');
+    setInterval(() => {
+        animateTitle('hp_title', getRandomIntInclusive(5, 7), true);
+    }, getRandomIntInclusive(3000, 5000));
+
+    document.addEventListener('keypress', (event) => {
+    let key = event.key;
+    let body = document.getElementsByTagName("body")[0];
+    console.log(key, body);
+    if(key == "0" || key == "1" || key == "2" || key == "3" || key == "4"){
+        body.style.backgroundColor = "var(--c"+key+")"
+    }
+}, false);
+</script>
+
+</body>
+</html>
