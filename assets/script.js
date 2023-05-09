@@ -238,12 +238,20 @@ function openToastHomeClick(id, color, handle){
         toast.style.display = "initial";
         toast.style.position = "absolute";
         toast.style.backgroundColor = "var(--"+color+")";
-        toast.style.setProperty("left", handle.offsetLeft+"px");
+        //toast.style.setProperty("left", handle.offsetLeft+"px");
         toast.style.setProperty("top", (handle.offsetTop - (toast.offsetHeight/4))+"px");
+        toast.setAttribute("visible", "true");
     }
 }
 
-
+function closeToastHomeClick(){
+    if (toast.getAttribute("visible") != "true") {
+        toast.style.display = "none";
+    }else{
+        toast.setAttribute("visible", "false");
+    }
+    
+}
 
 
 

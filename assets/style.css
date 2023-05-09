@@ -380,6 +380,7 @@ nav a:hover {text-decoration: underline; font-style: normal}
 #hp_abstract{font-size: var(--l); min-width: 80%}
 .hp_hand{cursor: pointer;border-bottom: 4px var(--accent) solid; border-radius: 5px; text-decoration: none}
 .hp_hand:hover{border-bottom: 7px var(--accent) solid; font-style: normal}
+.hp_gif{max-width: 100%; padding-top: 60px;}
 .popup{font-size: var(--mUP); text-decoration: none; letter-spacing: -.5px}
 .popup:hover{font-style: normal}
 .popup small{font-size: calc(var(--m)/1.2)}
