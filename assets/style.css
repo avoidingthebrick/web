@@ -387,10 +387,15 @@ nav a:hover {text-decoration: underline; font-style: normal}
 
 /* VIDEOS */
 .vids{
-  padding: 10px;
-  min-width: 80%;
-  height: auto;
+  padding: 10px 0;
+  min-width: 640px;
+  height: 360px;
 }
+
+.vid_desktop{display: initial}
+.vid_mobile{display: none; padding: 5%!important}
+
+#vid_1, #vid_2, #vid_3{padding-top: 0px}
 
 
 
@@ -413,6 +418,14 @@ nav a:hover {text-decoration: underline; font-style: normal}
 
 
 /*MEDIA QUERY*/
+@media (max-width: 1380px) {
+.vids{
+    padding: 10px 0;
+    min-width: 560px;
+    height: 315px;
+  }
+}
+
 @media (max-width: 1085px) {
   :root {
   --s: 16px;
@@ -491,10 +504,12 @@ nav a:hover {text-decoration: underline; font-style: normal}
   .hp_hand{border-bottom: 3px var(--accent) solid; border-radius: 3px}
   .hp_hand:hover{border-bottom: 5px var(--accent) solid}
   .vids{
-  padding: 2%;
-  min-width: 96%;
-  height: auto;
-}
+    padding: 5% 0;
+    min-width: 480px;
+    height: 270px;
+  }
+  .vid_desktop{display: none}
+  .vid_mobile{display: initial}
 }
 
 
@@ -505,6 +520,11 @@ nav a:hover {text-decoration: underline; font-style: normal}
   }
   #homepage h1{font-size: 25vw}
   #homepage h3{top: calc(19vw + 25px); left: 35vw; font-size: 4.2vw; letter-spacing: -.2vw}
+  .vids{
+    padding: 2% 0;
+    min-width: 240px;
+    height: 135px;
+  }
 }
 
 
